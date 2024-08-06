@@ -1,0 +1,144 @@
+@import '../../styles/variables.scss';
+
+.Home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+
+    height: calc(100vh - $nav-size);
+    position: relative;
+    z-index: 100;
+
+    .Home__Info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 24px;
+
+        .Home__Title {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+
+            .Home__Title_Accent {
+                margin-left: 16px;
+                color: $font-accent;
+            }
+        }
+
+        .Home__Subtitle {
+            font-size: 36px;
+            font-weight: 700;            
+        }
+
+        .Home__Text {
+            font-size: 18px;
+            font-weight: 500;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .Home__Socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 12px;
+            gap: 16px;
+
+            .Home__Socials_Item {
+                font-size: 32px;
+                text-decoration: none;
+                color: darken($dark, 10%);
+                width: 64px;
+                height: 64px;
+
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: rgb(238, 238, 238);
+
+                transition: $transition;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .Home__ScrollAnim {
+            margin-top: 64px;
+            width: 40px;
+            min-height: 80px;
+            height: 80px;
+            border: 3px solid #333;
+            border-radius: 60px;
+            position: relative;
+    
+            &::before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #333;
+                border-radius: 50%;
+                opacity: 1;
+                animation: wheel 2s infinite;
+                -webkit-animation: wheel 2s infinite;
+            }
+        }
+    }
+
+    .Home__Image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Home__Image_Shape {
+            width: 440px;
+            height: 440px;
+            background-color: $primary;
+            border-radius: 8px;
+            border-top-right-radius: 50%;
+        }
+    }
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'lg')) {
+    .Home {
+        height: auto;
+
+        .Home__Info {
+            padding-top: calc($nav-size / 2 + 24px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+
+            .Home__ScrollAnim {
+                margin-top: 16px;
+            }
+        }
+    }
+}

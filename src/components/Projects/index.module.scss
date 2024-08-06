@@ -1,0 +1,176 @@
+@import '../../styles/variables.scss';
+
+.Projects {
+    height: 100vh;
+    width: 100%;
+    margin-top: $section-margin-top;
+    padding-top: $section-margin-top;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .Projects__Title {
+        font-size: $title-size;
+        font-weight: 700;
+        color: $font-color;
+    }
+
+    .Projects__Container {
+        margin-top: 8vh;
+        min-height: 100vh;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 56vh);
+        gap: 32px;
+
+        .Projects__Project {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            z-index: 200;
+            overflow: hidden;
+
+            &:hover {
+                .Projects__Project_Image {
+                    transform: scale(1.02);
+                }
+
+                .Projects__Project_Shape {
+                    opacity: 1;
+                }
+
+                .Projects__Project_Preview {
+                    opacity: 0;
+                }
+            }
+
+            .Projects__Project_Preview {
+                font-size: 24px;
+                font-weight: 700;
+                color: $white;
+                text-align: center;
+                text-overflow: ellipsis;
+                background-color: $primary;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 250;
+                padding: 8px 24px;
+                border-radius: 8px;
+                transition: all 0.2s ease-in-out;
+                box-shadow: $box-shadow;
+            }
+
+            .Projects__Project_Image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
+    
+            .Projects__Project_Shape {
+                opacity: 0;
+                position: absolute;
+                background-color: #000000bb;
+                width: inherit;
+                height: inherit;
+                bottom: 0;
+                left: 0;
+                padding: 24px 64px;
+                border-radius: inherit;
+                z-index: 250;
+
+                transition: all 0.2s ease-in-out;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+
+                .Projects__Project_Title {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: $primary;
+                }
+
+                .Projects__Project_Description {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-top: 8px;
+                    color: $white;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                }
+
+                .Projects__Project_Medias {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 24px;
+                    gap: 14px;
+
+                    .Projects__Project_Medias_Item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 8px;
+                        padding: 16px;
+                        border: 2px solid $white;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: $white;
+
+                        i {
+                            font-size: 24px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+    
+            &:nth-child(1) {
+                grid-row: span 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'lg')) {
+    .Projects {
+        height: 100%;
+        padding-top: $section-margin-top / 2;
+
+        .Projects__Container {
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 560px);
+
+            .Projects__Project {
+                &:nth-child(1) {
+                    grid-row: span 1;
+                }
+            }
+        }
+    }
+}

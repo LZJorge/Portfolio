@@ -1,0 +1,99 @@
+@import '../../styles/variables.scss';
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 60vh;
+    margin-top: $section-margin-top;
+
+    background-color: $bg-dark;
+
+    .Footer__Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 75%;
+
+        padding: 0 10%;
+
+        gap: 12px;
+
+        .Footer__Socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            .Footer__Socials_Item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 64px;
+                height: 64px;
+                border: 2px solid transparent;
+                background-color: darken($color: $black, $amount: 2);
+                font-size: 32px;
+                border-radius: 50%;
+                transition: all .1s;
+        
+                text-decoration: none;
+                cursor: pointer;
+        
+                color: $white;
+
+                &:hover {
+                    border: 2px solid $white;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .Footer__Logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            .Footer__Logo_Icon {
+                font-size: 28px;
+                font-weight: 900;
+                color: $dark;
+                background-color: $white;
+                padding: 2px 12px;
+                border-radius: 4px;
+
+                user-select: none;
+                display: flex;
+                align-items: center;
+            }
+
+            .Footer__Logo_Name {
+                font-size: 26px;
+                font-weight: 800;
+                color: $white;
+            }
+        }
+
+        .Footer__Email {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+        }
+
+        .Footer__Copyright {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+        }
+    }  
+}

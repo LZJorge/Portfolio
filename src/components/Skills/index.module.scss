@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: $section-margin-top / 2;
+
+    .Skills__Title {
+        font-size: $title-size;
+    }
+
+    .Skills__Items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 18px;
+        width: 100%;
+        margin-top: 32px;
+
+        .Skills__Items_Item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $box-shadow;
+            height: 96px;
+            font-size: 48px;
+            border-radius: 4px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

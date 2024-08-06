@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "links": [
+      {
+        "id": 0,
+        "name": "About",
+        "anchor": "about"
+      },
+      {
+        "id": 1,
+        "name": "Skills",
+        "anchor": "skills"
+      },
+      {
+        "id": 2,
+        "name": "Projects",
+        "anchor": "projects"
+      }
+    ],
+    "contact": "Contact",
+    "changeLanguage": "Change Language"
+  },
+  "home": {
+    "title": "Hi, I'm",
+    "subtitle": "Backend Developer",
+    "text": "“Mistakes are opportunities to learn.”",
+    "name": "Jorge"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Backend Developer",
+    "texts": [
+      "Passionate about programming since the age of 15, I have developed strong skills in handling backend programming languages such as Typescript and Python.",
+      "My focus is on creating robust and scalable systems that drive efficient application performance."
+    ],
+    "cv_button": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "data": [
+      {
+        "id": 0,
+        "name": "Javascript",
+        "icon": "js"
+      },
+      {
+        "id": 1,
+        "name": "Typescript",
+        "icon": "ts"
+      },
+      {
+        "id": 2,
+        "name": "Python",
+        "icon": "py"
+      },
+      {
+        "id": 3,
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "id": 4,
+        "name": "NPM",
+        "icon": "npm"
+      },
+      {
+        "id": 5,
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "id": 6,
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "id": 7,
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "id": 8,
+        "name": "Postman",
+        "icon": "postman"
+      },
+      {
+        "id": 9,
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+      },
+      {
+        "id": 10,
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "id": 11,
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "id": 12,
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "id": 13,
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "id": 14,
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "id": 15,
+        "name": "ExpressJS",
+        "icon": "express"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "data": [
+      {
+        "id": 0,
+        "title": "AcademyCore",
+        "description": "It aims to solve the problem of managing the data and operations of a university-like system. It seeks to provide a secure, scalable, and maintainable API that can handle complex queries and mutations on the data.",
+        "image_url": "https://via.placeholder.com/640x360",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/AcademyCoreAPI",
+            "icon": "fa-brands fa-github"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "LPG Distribution",
+        "description": "Wants to provide an efficient system for managing the distribution of liquefied gas to the population by companies.",
+        "image_url": "https://via.placeholder.com/640x360",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/LPG-Distributor-API",
+            "icon": "fa-brands fa-github"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Quiz Game",
+        "description": "It is a trivia game that will help you test your general knowledge on a variety of topics. You can play it in your browser 😉.",
+        "image_url": "https://via.placeholder.com/640x360",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/Quiz-API",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "id": 1,
+            "name": "Demo",
+            "url": "https://demo.academycore.com",
+            "icon": "fa-solid fa-arrow-up-right-from-square"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "info": {
+      "title": "Let's chat.",
+      "subtitle": "Tell me about your project.",
+      "description": "I'll get back to you as soon as possible. 🙌",
+      "email": "Email me at:",
+      "tooltip": "Haz click para enviar un correo"
+    },
+    "form": {
+      "cta": "Send me a message!",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send"
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved"
+  }
+}

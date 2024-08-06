@@ -1,0 +1,125 @@
+@import '../../styles/variables.scss';
+
+.About {
+    height: 100vh;
+    width: 100%;
+    margin-top: calc($section-margin-top / 2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .About__Container {
+        height: 85vh;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        border-radius: 12px;
+        box-shadow: $box-shadow;
+
+        .About__Info {
+            width: 90%;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+    
+            gap: 12px;
+    
+            .About__Title {
+                font-size: 48px;
+                font-weight: 700;
+    
+                .About__Title_Accent {
+                    color: $primary;
+                }
+            }
+    
+            .About__Subtitle {
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            .About__Text {
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 400;
+                margin-top: 8px;
+            }
+
+            .About__Button {
+                width: 240px;
+                height: 48px;
+                margin-top: 32px;
+            }
+        }
+    
+        .About__Image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .About__Image_Shape {
+                width: 380px;
+                height: 380px;
+                border-radius: 8px;
+                border-top-left-radius: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'lg')) {
+    .About {
+        height: auto;
+
+        .About__Container {
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            padding: 32px auto;
+
+            .About__Info {
+                justify-content: center;
+                text-align: center;
+                padding-left: 0;
+                margin: 16px auto 32px;
+
+                .About__Button {
+                    width: 100%;
+                }
+            }
+
+            .About__Image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                .About__Image_Shape {
+                    height: 340px;
+                    width: 380px;
+                    margin: 48px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'md')) {
+    .About {        
+        padding-top: $section-margin-top / 2;
+
+        .About__Container {
+            .About__Image {
+                .About__Image_Shape {
+                    height: 260px;
+                    width: 280px;
+                }
+            }
+        }
+    }
+}

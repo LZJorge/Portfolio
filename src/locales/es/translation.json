@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "links": [
+      {
+        "id": 0,
+        "name": "Sobre mí",
+        "anchor": "about"
+      },
+      {
+        "id": 1,
+        "name": "Habilidades",
+        "anchor": "skills"
+      },
+      {
+        "id": 2,
+        "name": "Proyectos",
+        "anchor": "projects"
+      }
+    ],
+    "contact": "Contacto",
+    "changeLanguage": "Cambiar Idioma"
+  },
+  "home": {
+    "title": "Hola, soy",
+    "subtitle": "Desarrollador Backend",
+    "text": "“Los errores son oportunidades para aprender”",
+    "name": "Jorge"
+  },
+  "about": {
+    "title": "Acerca de mi",
+    "subtitle": "Desarrollador Backend",
+    "texts": [
+      "Apasionado por la programación desde los 15 años, he desarrollado habilidades sólidas en el manejo de lenguajes de programación backend como Typescript y Python.",
+      "Mi atención se centra en la creación de sistemas robustos y escalables que impulsen el funcionamiento eficiente de las aplicaciones."
+    ],
+    "cv_button": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "data": [
+      {
+        "id": 0,
+        "name": "Javascript",
+        "icon": "js"
+      },
+      {
+        "id": 1,
+        "name": "Typescript",
+        "icon": "ts"
+      },
+      {
+        "id": 2,
+        "name": "Python",
+        "icon": "py"
+      },
+      {
+        "id": 3,
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "id": 4,
+        "name": "NPM",
+        "icon": "npm"
+      },
+      {
+        "id": 5,
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "id": 6,
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "id": 7,
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "id": 8,
+        "name": "Postman",
+        "icon": "postman"
+      },
+      {
+        "id": 9,
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+      },
+      {
+        "id": 10,
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "id": 11,
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "id": 12,
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "id": 13,
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "id": 14,
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "id": 15,
+        "name": "ExpressJS",
+        "icon": "express"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "data": [
+      {
+        "id": 0,
+        "title": "AcademyCore (API)",
+        "description": "Tiene como objetivo resolver el problema de gestionar los datos y operaciones de un sistema similar a una universidad.\nBusca proporcionar una API segura, escalable y mantenible que pueda manejar consultas y mutaciones complejas sobre los datos.",
+        "image_url": "/uc-00.gif",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/AcademyCoreAPI",
+            "icon": "fa-brands fa-github"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "LPG Distribution (API)",
+        "description": "Busca proporcionar un sistema eficiente para realizar la gestion de distribución de gas licuado a la población por parte de las empresas.",
+        "image_url": "/uc-01.gif",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/LPG-Distributor-API",
+            "icon": "fa-brands fa-github"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Quiz Game",
+        "description": "Es un juego de preguntas y respuestas que te ayudará a poner a prueba tu conocimiento general sobre diversos temas. Puedes jugarlo en tu navegador 😉.",
+        "image_url": "/quiz-game.png",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/Quiz-API",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "id": 1,
+            "name": "Demo",
+            "url": "https://lzjorge-quiz-app.netlify.app",
+            "icon": "fa-solid fa-arrow-up-right-from-square"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "info": {
+      "title": "Charlemos.",
+      "subtitle": "Cuéntame sobre tu proyecto",
+      "description": "Te responderé lo antes posible. 🙌",
+      "email": "Escríbeme a:",
+      "tooltip": "Haz click para enviar un correo"
+    },
+    "form": {
+      "cta": "¡Envíame un mensaje!",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "button": "Enviar"
+    }
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados"
+  }
+}

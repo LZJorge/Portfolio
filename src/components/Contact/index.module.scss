@@ -1,0 +1,281 @@
+@import '../../styles/variables.scss';
+
+.Contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: $section-margin-top * 2;
+    padding-top: $section-margin-top / 2;
+    width: 100%;
+
+    .Contact__Info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+
+        .Contact__Info_Title {
+            font-size: 48px;
+            font-weight: 700;
+            color: $primary;
+        }
+
+        .Contact__Info_Subtitle {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+
+        .Contact__Info_Description {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $font-color;
+            margin-bottom: 32px;
+        }
+
+        .Contact__Info_EmailBox {
+            width: 90%;
+            height: 90px;
+            margin: 56px auto 32px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            text-decoration: none;
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            .Contact__Info_EmailBox_Icon {
+                width: 52px;
+                height: 52px;
+                font-size: 24px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f1f1f1;
+                color: $font-color;
+            }
+
+            .Contact__Info_EmailBox_Content {
+                display: flex;
+                flex-direction: column;
+
+                .Contact__Info_EmailBox_Text {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $font-color;
+                }
+
+                .Contact__Info_EmailBox_Email {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .Contact__FormContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: $box-shadow;
+        padding: 36px 0px;
+    }
+
+    .Contact__Form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 420px;
+
+        .Contact__Form_Title {
+            font-size: 24px;
+            font-weight: 700;
+            color: $font-color;
+            width: 420px;
+            text-align: left;
+            margin: 0 auto 16px;
+        }
+
+        .Contact__Form_Group {
+            position: relative;
+            margin: 36px auto 10px;
+            width: 420px;
+
+            .Contact__Form_Group_Icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 12px;
+                color: $font-color;
+                font-size: 16px;
+            }
+
+            .Contact__Form_Group_Icon_Textarea {
+                position: absolute;
+                top: 18px;
+                transform: translateY(-50%);
+                left: 12px;
+                color: $font-color;
+                font-size: 16px;
+            }
+
+            .Contact__Form_Group_Input {
+                font-size: 16px;
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-bottom: 2px solid #ccc;
+                background-color: #f1f1f1;
+                padding: 5px 0;
+                padding-left: 40px;
+                outline: none;                
+
+                &:focus ~ .Contact__Form_Group_Label,
+                &:not(:placeholder-shown) ~ .Contact__Form_Group_Label {
+                    top: -28px;
+                    left: 14px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $font-color;
+                }
+
+                &:focus ~ .Contact__Form_Group_Underline,
+                &:not(:placeholder-shown) ~ .Contact__Form_Group_Underline {
+                    transform: scaleX(1);
+                }
+            }
+
+            .Contact__Form_Group_Textarea {
+                font-size: 16px;
+                width: 100%;
+                max-width: 420px;
+                min-height: 140px;
+                resize: none;
+                border: none;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-bottom: 2px solid #ccc;
+                padding: 5px 0;
+                padding-left: 40px;
+                background-color: #f1f1f1;
+                outline: none;                
+
+                &:focus ~ .Contact__Form_Group_Label,
+                &:valid ~ .Contact__Form_Group_Label {
+                    top: -28px;
+                    left: 14px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $font-color;
+                }
+
+                &:focus ~ .Contact__Form_Group_Underline,
+                &:valid ~ .Contact__Form_Group_Underline {
+                    transform: scaleX(1);
+                }
+            }
+
+            .Contact__Form_Group_Label {
+                position: absolute;
+                top: 7px;
+                left: 40px;
+                color: #999;
+                transition: all 0.3s ease;
+                pointer-events: none;
+            }
+
+            .Contact__Form_Group_Underline {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: lighten($font-color, 20%);
+                transform: scaleX(0);
+                transition: all 0.3s ease;
+            }
+        }
+
+        .Contact__Form_Button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            border: 1px solid $font-color;
+            border-radius: 4px;
+            width: 210px;
+            height: 36px;
+            margin: 32px 0 16px;
+            color: $font-color;
+            font-weight: 500;
+            padding: 8px 24px;
+            text-decoration: none;
+            transition: all .1s;
+        
+            &:hover {
+                border-color: $primary;
+                background-color: $primary;
+                color: $white;
+                box-shadow:
+                    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+        
+            &:active {
+                color: $white;
+                border-color: $primary-active;
+                background-color: $primary-active;
+            }
+        
+            i {
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'lg')) {
+    .Contact {
+        grid-template-columns: 1fr;
+        margin-top: $section-margin-top / 2;
+
+        .Contact__FormContainer {
+            width: 100%;
+
+            .Contact__Form {
+                width: 100%;
+                align-items: center;
+                
+
+                .Contact__Form_Title {
+                    width: auto;
+                    margin: 0 auto 16px;
+                }
+
+                .Contact__Form_Group {
+                    width: 92%;
+                }
+                
+                .Contact__Form_Group_Textarea {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
