@@ -188,6 +188,9 @@
       "email": "Correo electrónico",
       "message": "Mensaje",
       "button": "Enviar"
+    },
+    "toast": {
+      "success": "Mensaje enviado correctamente"
     }
   },
   "footer": {
