@@ -33,7 +33,8 @@
       "Apasionado por la programación desde los 15 años, he desarrollado habilidades sólidas en el manejo de lenguajes de programación backend como Typescript y Python.",
       "Mi atención se centra en la creación de sistemas robustos y escalables que impulsen el funcionamiento eficiente de las aplicaciones."
     ],
-    "cv_button": "Descargar CV"
+    "cv_button": "Descargar CV",
+    "cv_file": "/Jorge-Landaeta-ES.pdf"
   },
   "skills": {
     "title": "Habilidades",

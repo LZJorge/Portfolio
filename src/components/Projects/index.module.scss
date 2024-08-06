@@ -159,8 +159,8 @@
 @media screen and (max-width: map-get($breakpoints, 'lg')) {
     .Projects {
         height: 100%;
-        padding-top: $section-margin-top / 2;
-
+        padding-top: calc($section-margin-top / 2);
+        
         .Projects__Container {
             height: 100%;
             grid-template-columns: 1fr;

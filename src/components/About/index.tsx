@@ -8,6 +8,10 @@ const About: React.FC = () => {
 
   const tTexts = t('about.texts', { returnObjects: true }) as string[];
 
+  const donwloadFile = () => {
+    window.open(t("about.cv_file"), "_blank");
+  }
+
   return (
     <section
       data-aos="fade-up"
@@ -43,7 +47,7 @@ const About: React.FC = () => {
             </p>
           ))}
           <div data-aos="fade-up" data-aos-delay={AnimationDurationBase * 5}>
-            <Button style="primary" customStyle={styles.About__Button}>
+            <Button style="primary" customStyle={styles.About__Button} onClick={donwloadFile}>
               {t("about.cv_button")} <i className="fa-regular fa-file"></i>
             </Button>
           </div>
