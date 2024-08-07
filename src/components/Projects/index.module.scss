@@ -14,11 +14,13 @@
     .Projects__Title {
         font-size: $title-size;
         font-weight: 700;
-        color: $font-color;
+        background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .Projects__Container {
-        margin-top: 8vh;
         min-height: 100vh;
         width: 100%;
 

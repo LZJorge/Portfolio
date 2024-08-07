@@ -1,0 +1,9 @@
+@import '../../../styles/variables.scss';
+
+.Separator {
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    margin: 64px auto;
+    border-bottom: 6px dotted $font-color;
+}

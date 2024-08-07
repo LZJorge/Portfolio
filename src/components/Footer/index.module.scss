@@ -9,7 +9,7 @@
 
     width: 100%;
     height: 60vh;
-    margin-top: $section-margin-top;
+    margin-top: calc($section-margin-top / 2);
 
     background-color: $bg-dark;
 

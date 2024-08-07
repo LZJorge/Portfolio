@@ -18,7 +18,10 @@
         .Contact__Info_Title {
             font-size: 48px;
             font-weight: 700;
-            color: $primary;
+            background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .Contact__Info_Subtitle {
@@ -78,7 +81,10 @@
                 .Contact__Info_EmailBox_Email {
                     font-size: 14px;
                     font-weight: 700;
-                    color: $primary;
+                    background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -252,6 +258,7 @@
 @media screen and (max-width: map-get($breakpoints, 'lg')) {
     .Contact {
         grid-template-columns: 1fr;
+        margin-top: calc($section-margin-top / 2);
         padding-top: calc($section-margin-top / 2);
 
         .Contact__FormContainer {

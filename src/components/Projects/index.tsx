@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Separator from "../common/Separator";
 import { Anchors } from '../../consts/consts';
 import { AnimationDurationBase } from "../../consts/consts";
 import styles from './index.module.scss';
@@ -30,6 +31,7 @@ const Projects: React.FC = () => {
       >
         {t("projects.title")}
       </h1>
+      <Separator />
       <div className={styles.Projects__Container}>
         {tProjects.map((project: Project, key: number) => {
           return (

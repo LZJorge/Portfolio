@@ -33,6 +33,10 @@
             .About__Title {
                 font-size: 48px;
                 font-weight: 700;
+                background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
     
                 .About__Title_Accent {
                     color: $primary;

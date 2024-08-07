@@ -10,6 +10,10 @@
 
     .Skills__Title {
         font-size: $title-size;
+        background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .Skills__Items {

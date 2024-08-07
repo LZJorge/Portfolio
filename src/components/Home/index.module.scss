@@ -18,9 +18,10 @@
         gap: 24px;
 
         .Home__Title {
-            font-size: 4rem;
+            font-size: 4.5rem;
             font-weight: 700;
-            line-height: 1.2;
+            line-height: 1.3;
+
 
             .Home__Title_Accent {
                 margin-left: 16px;
@@ -30,7 +31,11 @@
 
         .Home__Subtitle {
             font-size: 36px;
-            font-weight: 700;            
+            font-weight: 700;
+            background: linear-gradient(to right, #2978B5 0%, #39A6FB 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .Home__Text {
@@ -70,7 +75,7 @@
         }
 
         .Home__ScrollAnim {
-            margin-top: 64px;
+            margin-top: 32px;
             width: 40px;
             min-height: 80px;
             height: 80px;
