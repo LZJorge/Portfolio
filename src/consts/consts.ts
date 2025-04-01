@@ -2,6 +2,7 @@
 export enum Anchors {
     HOME = 'home',
     ABOUT = 'about',
+    EXPERIENCE = 'experience',
     PROJECTS = 'projects',
     CONTACT = 'contact',
     SKILLS = 'skills',
@@ -19,7 +20,7 @@ export const Socials = [
         id: 1,
         name: 'Linkedin',
         icon: 'linkedin-in',
-        url: 'https://www.linkedin.com/in/jorge',
+        url: 'https://www.linkedin.com/in/jorge-landaeta-829887273/',
     }
 ]
 

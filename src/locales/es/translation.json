@@ -118,6 +118,47 @@
         "id": 15,
         "name": "ExpressJS",
         "icon": "express"
+      },
+      {
+        "id": 16,
+        "name": "NestJS",
+        "icon": "nestjs"
+      },
+      {
+        "id": 17,
+        "name": "Flask",
+        "icon": "flask"
+      },
+      {
+        "id": 18,
+        "name": "Jest",
+        "icon": "jest"
+      },
+      {
+        "id": 19,
+        "name": "Amazon Web Services",
+        "icon": "aws"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "data": [
+      {
+        "id": 0,
+        "title": "Desarrollador Backend",
+        "company": "LARENAI",
+
+        "location_prefix": "Ubicación",
+        "location": "Panamá - Remoto",
+
+        "date_prefix": "Fecha",
+        "date": "Agosto 2024 - Actualidad",
+        
+        "description": "Desarrollo y mantenimiento de Bot con presencia en redes sociales impulsados por Inteligencia Artificial. Desarollo y mantenimiento del sistema de gestión de usuarios, bots, roles y diferentes integraciones a servicios externos de la compañía.",
+        "web_button": "Visitar sitio",
+        "web_url": "https://minion.bot/",
+        "image_url": "/larenai.png"
       }
     ]
   },
@@ -126,9 +167,9 @@
     "data": [
       {
         "id": 0,
-        "title": "AcademyCore (API)",
+        "title": "Floresta",
         "description": "Tiene como objetivo resolver el problema de gestionar los datos y operaciones de un sistema similar a una universidad.\nBusca proporcionar una API segura, escalable y mantenible que pueda manejar consultas y mutaciones complejas sobre los datos.",
-        "image_url": "/uc-00.gif",
+        "image_url": "/floresta.png",
         "medias": [
           {
             "id": 0,
@@ -140,9 +181,9 @@
       },
       {
         "id": 1,
-        "title": "LPG Distribution (API)",
+        "title": "LPG Distribution",
         "description": "Busca proporcionar un sistema eficiente para realizar la gestion de distribución de gas licuado a la población por parte de las empresas.",
-        "image_url": "/uc-01.gif",
+        "image_url": "/lpg.jpeg",
         "medias": [
           {
             "id": 0,
@@ -154,8 +195,28 @@
       },
       {
         "id": 2,
-        "title": "Quiz Game",
+        "title": "Quizzy",
         "description": "Es un juego de preguntas y respuestas que te ayudará a poner a prueba tu conocimiento general sobre diversos temas. Puedes jugarlo en tu navegador 😉.",
+        "image_url": "/quiz-game.png",
+        "medias": [
+          {
+            "id": 0,
+            "name": "Github",
+            "url": "https://github.com/LZJorge/Quiz-API",
+            "icon": "fa-brands fa-github"
+          },
+          {
+            "id": 1,
+            "name": "Demo",
+            "url": "https://lzjorge-quiz-app.netlify.app",
+            "icon": "fa-solid fa-arrow-up-right-from-square"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "SmartSuite",
+        "description": "Smartsuite es una aplicación (local) que permite a los usuarios subir sus propios documentos en formato PDF, para que estos se carguen a su bot de telegram con IA mediante RAG y así obtener información específica en base a dichos documentos.",
         "image_url": "/quiz-game.png",
         "medias": [
           {

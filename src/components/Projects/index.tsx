@@ -19,7 +19,6 @@ type Project = {
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
-
   const tProjects = t('projects.data', { returnObjects: true }) as Project[];
 
   return (

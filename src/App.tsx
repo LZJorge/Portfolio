@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Container from "./components/Container";
 import Home from "./components/Home";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </Container>

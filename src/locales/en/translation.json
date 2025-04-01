@@ -34,7 +34,7 @@
       "My focus is on creating robust and scalable systems that drive efficient application performance."
     ],
     "cv_button": "Download CV",
-    "cv_file": "/Jorge-Landaeta-EN.pdf"
+    "cv_file": "/Jorge-Landaeta-ES.pdf"
   },
   "skills": {
     "title": "Skills",
@@ -118,6 +118,47 @@
         "id": 15,
         "name": "ExpressJS",
         "icon": "express"
+      },
+      {
+        "id": 16,
+        "name": "NestJS",
+        "icon": "nestjs"
+      },
+      {
+        "id": 17,
+        "name": "Flask",
+        "icon": "flask"
+      },
+      {
+        "id": 18,
+        "name": "Jest",
+        "icon": "jest"
+      },
+      {
+        "id": 19,
+        "name": "Amazon Web Services",
+        "icon": "aws"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "data": [
+      {
+        "id": 0,
+        "title": "Backend Developer",
+        "company": "LARENAI",
+
+        "location_prefix": "Location",
+        "location": "Panamá - Remote",
+
+        "date_prefix": "Date",
+        "date": "August 2024 - Present",
+        "description": "Development and maintenance of a Bot with a presence on social networks driven by Artificial Intelligence. Development and maintenance of the user management system, bots, roles, and various integrations to external company services.",
+        
+        "web_button": "Go to website",
+        "web_url": "https://minion.bot/",
+        "image_url": "/larenai.png"
       }
     ]
   },
