@@ -13,6 +13,11 @@
       },
       {
         "id": 2,
+        "name": "Experiencia",
+        "anchor": "experience"
+      },
+      {
+        "id": 3,
         "name": "Proyectos",
         "anchor": "projects"
       }
